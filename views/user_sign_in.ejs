@@ -1,0 +1,11 @@
+<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Slab&display=swap" rel="stylesheet">
+<div id="container">
+    <h3><%= title %></h3>
+    <form action="/users/create-session" method="POST">
+        <p>Email : <input type="email" name="email" id="email" placeholder="xyz@example.com" required></p>
+        <p>Password : <input type="password" name="passwd" id="passwd" placeholder="Password" required></p>
+        <button type="submit">Log In</button></br>
+        <a href="">Forgot password?</a> </br>
+        <a href="">New Here? Sign Up</a>
+    </form>
+</div>
