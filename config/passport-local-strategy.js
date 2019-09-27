@@ -48,6 +48,23 @@ passport.deserializeUser(function(id, done){
     });
 });
 
+//check if the user is authenticated
+passport.checkAuthentication = function(req, res, next){
+    // if the user is signed in, then pass it on to the next function(controller's action)
+    if(req.isAuthenticated()){
+        return next();
+    }
+    //else if the user is not authenticated 
+    return res.redirect('/users/sign-in');
+};
+
+passport.setAuthenticatedUser = function(req, res, next){
+    if(req.isAuthenticated()){
+        // req.user contains the current signed in user form the cokie and we are just sending the data to the locals for the views
+        res.locals.user = req.user;
+    }
+    next();
+};  
 
 
 module.exports = passport;

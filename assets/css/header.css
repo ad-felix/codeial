@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #007acc;
+  color: white;
+  font-family: 'Bitter', serif; }
+  header #home {
+    font-size: 1.75rem;
+    padding-top: .25rem; }
+  header div ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row; }
+    header div ul li {
+      margin-left: .25rem; }
+      header div ul li a {
+        color: white;
+        text-decoration: none;
+        border: 2px solid black; }
+        header div ul li a:hover {
+          color: green; }
