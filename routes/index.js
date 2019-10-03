@@ -6,9 +6,10 @@ console.log('Router Loaded');
 
 router.get('/',homeController.home);
 router.use('/users', require('./users')); //Linking the root controller to the sub-controllers
-router.use('/users', require('./posts'));
+router.use('/posts', require('./posts'));
+router.use('/comments', require('./comments'));
 
 //for any further routes, access from here
-// reouter.use('/routerName', require('./routerFile'));
+// router.use('/routerName', require('./routerFile'));
 
 module.exports = router;

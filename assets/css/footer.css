@@ -1,0 +1,9 @@
+footer {
+  background-color: #007acc;
+  display: flex; }
+  footer div {
+    color: white;
+    font-family: 'Bitter', serif; }
+    footer div i {
+      font-size: .75rem;
+      margin: .5rem; }
